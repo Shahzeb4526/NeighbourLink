@@ -1,0 +1,22 @@
+# Keep EAS upload archive minimal and deterministic
+node_modules/
+.expo/
+.vscode/
+
+# Build/test artifacts
+android/
+ios/
+dist/
+web-build/
+coverage/
+*.log
+
+# VCS and local machine files
+.git/
+.DS_Store
+Thumbs.db
+
+# Secrets / local env
+.env
+.env.*
+!.env.example
