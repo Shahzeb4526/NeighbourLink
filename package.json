@@ -10,6 +10,9 @@
     "web": "expo start --web",
     "doctor": "node scripts/expoDoctorClean.mjs",
     "doctor:verbose": "node scripts/expoDoctorClean.mjs --verbose",
+    "eas:build": "node scripts/easBuildFromTemp.mjs",
+    "eas:preview": "node scripts/easBuildFromTemp.mjs --profile preview",
+    "eas:production": "node scripts/easBuildFromTemp.mjs --profile production",
     "eas:preview:android": "node scripts/easBuildFromTemp.mjs --profile preview --platform android",
     "eas:production:android": "node scripts/easBuildFromTemp.mjs --profile production --platform android"
   },
