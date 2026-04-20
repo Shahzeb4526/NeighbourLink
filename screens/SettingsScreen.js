@@ -1,4 +1,4 @@
-import React from "react";
+import { useState } from "react";
 import {
   SafeAreaView,
   View,
@@ -9,7 +9,6 @@ import {
   Alert,
   Switch,
 } from "react-native";
-import { useState } from "react";
 
 const settingsSections = [
   {
@@ -86,8 +85,7 @@ export default function SettingsScreen({ onClose }) {
                   key={item.id}
                   style={[
                     styles.settingRow,
-                    index === section.items.length - 1 &&
-                      styles.settingRowLast,
+                    index === section.items.length - 1 && styles.settingRowLast,
                   ]}
                   activeOpacity={item.action ? 0.7 : 1}
                   onPress={() => item.action && handleAction(item.id)}

@@ -193,7 +193,7 @@ export default function App() {
   const [outgoingBorrowRequests, setOutgoingBorrowRequests] = useState([]);
   const [incomingBorrowRequests, setIncomingBorrowRequests] = useState([]);
   const [messageBanner, setMessageBanner] = useState(null);
-  const [unreadIncomingCount, setUnreadIncomingCount] = useState(0);
+  const [, setUnreadIncomingCount] = useState(0);
   const hasHydratedMessagesRef = useRef(false);
   const seenIncomingMessageIdsRef = useRef(new Set());
   const unreadIncomingMessageIdsRef = useRef(new Set());
@@ -1088,7 +1088,7 @@ export default function App() {
         }
         await deleteItem(null, itemId);
       }
-    } catch (error) {
+    } catch {
       await deleteUserItemDirect(userId, itemId);
     }
 

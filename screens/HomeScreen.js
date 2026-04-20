@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import {
   Alert,
   Modal,
@@ -35,7 +35,6 @@ export default function HomeScreen({
   borrowRequestsData,
   savedItemsData,
   onToggleSaveItem,
-  myItemsData,
   currentUser,
 }) {
   const [selectedCategory, setSelectedCategory] = useState(null);
